@@ -6,6 +6,7 @@ Sigmoid struggled, especially in deeper networks, due to vanishing gradients and
 4.A learning rate of 1e-3 was ideal for most optimizers, providing the best convergence speed without instability.
 5.Weight decay (L2 regularization) at 0.0005 helped prevent overfitting, but larger values led to poor performance.
 6.Batch size of 32 worked well for balancing training time and model performance.
+
 Best Performing Configuration:
 Optimizer: Adam
 Activation: ReLU
@@ -13,7 +14,8 @@ Hidden Layers: 3-4 layers
 Neurons per Layer: 64
 Batch Size: 32
 Learning Rate: 1e-3
-Recommendations for MNIST
+
+Recommendations for MNIST:
 1. Use Adam optimizer with a learning rate of 1e-3 for stable convergence.
 2. Use 3 hidden layers with 128 neurons each for balanced performance.
 3. Use ReLU activation for faster convergence compared to Sigmoid.
